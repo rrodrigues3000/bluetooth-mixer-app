@@ -23,7 +23,6 @@ class RecipeInsertion : Fragment() {
     ): View? {
         binding = DataBindingUtil.inflate(inflater, R.layout.recipe_insertion_fragment, container, false)
         return binding.root
-        /*return inflater.inflate(R.layout.recipe_insertion_fragment, container, false)*/
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
