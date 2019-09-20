@@ -28,12 +28,15 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
 }
 
 dependencies {
-
     def appDependencies = rootProject.ext.generalDependencies
 
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation "androidx.appcompat:appcompat:$appDependencies.appCompat"
     implementation "androidx.core:core-ktx:$appDependencies.appCore"
@@ -52,6 +55,8 @@ dependencies {
     //noinspection LifecycleAnnotationProcessorWithJava8
     kapt "androidx.lifecycle:lifecycle-compiler:$appDependencies.lifecycleVersion"
 
+    //Material
+    implementation "com.google.android.material:material:$appDependencies.googleMaterialVersion"
 
     //Navigation
     implementation "androidx.navigation:navigation-fragment-ktx:$navVersion"

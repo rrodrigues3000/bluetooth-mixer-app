@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.fragment.findNavController
 
 import com.tiagosoutei.misturador.R
 import com.tiagosoutei.misturador.databinding.MainFragmentBinding
@@ -28,6 +29,12 @@ class MainFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProviders.of(this).get(MainViewModel::class.java)
+
+        binding.helloWorld.setOnClickListener {
+            findNavController().navigate(
+                MainFragmentDirections.mainFragmentToRecipeInsertion()
+            )
+        }
     }
 
 }
