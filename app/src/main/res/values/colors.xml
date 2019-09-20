@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="primaryColor">#37474f</color>
+    <color name="primaryLightColor">#62727b</color>
+    <color name="primaryDarkColor">#102027</color>
+    <color name="secondaryColor">#ffd54f</color>
+    <color name="secondaryLightColor">#ffff81</color>
+    <color name="secondaryDarkColor">#c8a415</color>
+    <color name="primaryTextColor">#ffffff</color>
+    <color name="secondaryTextColor">#000000</color>
+
+    <color name="errorColor">#ba000d</color>
+    <color name="background">#eceff1</color>
+
+
+
+
+    <color name="material_design_primary_color">@color/primaryColor</color>
+    <color name="material_design_primary_variant_color">@color/primaryDarkColor</color>
+    <color name="material_design_color_on_primary">@color/primaryTextColor</color>
+    
+    <color name="material_design_secondary_color">@color/secondaryColor</color>
+    <color name="material_design_secondary_variant_color">@color/secondaryLightColor</color>
+    <color name="material_design_color_on_secondary">@color/primaryColor</color>
+
+
+    <color name="material_design_surface_color">@color/primaryColor</color>
+    <color name="material_design_background_color">@color/background</color>
+    <color name="material_design_error_color">@color/errorColor</color>
+
+    <color name="material_design_color_on_surface">@color/primaryColor</color>
+    <color name="material_design_color_on_background">@color/background</color>
+    <color name="material_design_color_on_error">@color/errorColor</color>
+
+
 </resources>

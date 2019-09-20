@@ -12,6 +12,7 @@ import androidx.navigation.fragment.findNavController
 import com.tiagosoutei.misturador.R
 import com.tiagosoutei.misturador.databinding.MainFragmentBinding
 import com.tiagosoutei.misturador.viewmodel.MainViewModel
+import kotlinx.android.synthetic.main.main_fragment.*
 
 class MainFragment : Fragment() {
 
@@ -30,11 +31,18 @@ class MainFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProviders.of(this).get(MainViewModel::class.java)
 
-        binding.helloWorld.setOnClickListener {
+        binding.btInsertion.setOnClickListener {
+            findNavController().navigate(
+                MainFragmentDirections.mainFragmentToConsultRecipeFragment()
+            )
+        }
+
+        binding.floatingActionButton.setOnClickListener {
             findNavController().navigate(
                 MainFragmentDirections.mainFragmentToRecipeInsertion()
             )
         }
+
     }
 
 }

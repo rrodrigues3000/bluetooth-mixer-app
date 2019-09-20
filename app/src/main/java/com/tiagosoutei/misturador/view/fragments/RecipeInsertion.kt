@@ -10,6 +10,7 @@ import androidx.databinding.DataBindingUtil
 
 import com.tiagosoutei.misturador.R
 import com.tiagosoutei.misturador.databinding.RecipeInsertionFragmentBinding
+import com.tiagosoutei.misturador.extensions.closeKeyboard
 import com.tiagosoutei.misturador.viewmodel.RecipeInsertionViewModel
 
 class RecipeInsertion : Fragment() {
@@ -28,6 +29,8 @@ class RecipeInsertion : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProviders.of(this).get(RecipeInsertionViewModel::class.java)
+        
+        binding.container.setOnClickListener { closeKeyboard() }
     }
 
 }

@@ -5,4 +5,13 @@
     <!--label's name-->
     <string name="lbl_home">Home</string>
     <string name="lbl_recipe_insetion">Recipe Insertion</string>
+    <string name="lbl_consult_recipe">Consult Recipe</string>
+    <string name="bt_insert_new_recipe">Enter new recipe</string>
+
+    <!--screen strings-->
+    <string name="tv_lbl_enter_title">Enter the title</string>
+    <string name="tv_lbl_enter_time">Enter the time</string>
+    <string name="tv_lbl_enter_speed">Enter the speed</string>
+    <string name="lbl_helper_text_seconds">Time in seconds</string>
+
 </resources>
