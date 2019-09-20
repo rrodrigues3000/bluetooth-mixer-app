@@ -1,0 +1,12 @@
+ext {
+
+    generalDependencies = [
+            appCompat : "1.1.0",
+            appCore : "1.2.0-alpha04",
+
+            roomVersion : "2.1.0",
+            lifecycleVersion : "2.1.0",
+            googleMaterialVersion : "1.1.0-alpha08"
+    ]
+
+}
