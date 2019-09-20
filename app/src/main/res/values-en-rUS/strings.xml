@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mixer</string>
+
+    <!--label's name-->
+    <string name="lbl_home">Home</string>
+    <string name="lbl_recipe_insetion">Recipe Insertion</string>
+</resources>
